@@ -1,0 +1,42 @@
+{
+    "name": "job-search-mcp",
+    "version": "0.0.6",
+    "mcpName": "io.github.PJW2004/job-search",
+    "description": "MCP Server for searching job postings on JobKorea and Saramin",
+    "main": "dist/index.js",
+    "type": "module",
+    "bin": {
+        "career-mcp": "dist/index.js",
+        "career-mcp-cli": "dist/cli.js"
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "start": "node dist/index.js",
+        "search": "node dist/cli.js",
+        "prepublishOnly": "tsc"
+    },
+    "keywords": [
+        "mcp",
+        "model-context-protocol",
+        "jobkorea",
+        "saramin",
+        "job-search"
+    ],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "^1.0.4",
+        "cheerio": "^1.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.19",
+        "typescript": "^5.3.3"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "packageManager": "pnpm@8.15.0"
+}
